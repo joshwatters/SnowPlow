@@ -15,24 +15,16 @@ Project Overview:
 - [Project Overview](./docs/Overview.MD)
 
 ## Snow Plow
-In the event of a catastrophic failure and a complete re-install is nessecary, see:
+In the event of a catastrophic failure and a complete re-install is nessecary, see: [Reinstallation](./docs/reinstall.MD)
 
-- [Reinstallation](./docs/reinstall.MD)
+For General Operating Procedures, see: [Operating Procedure](./docs/operating.MD)
 
-For General Operating Procedures, see:
-- [Operating Procedure](./docs/operating.MD)
+For Pathing, see: [Pathing](./docs/pathing.MD)
 
-For Pathing, see:
-- [Pathing](./docs/pathing.MD)
+For Lidar, see: [Lidar](./docs/lidar.MD)
 
-For Lidar, see:
-- [Lidar](./docs/lidar.MD)
+For GPS, see: [Global Positioning System](./docs/GPS.MD)
 
-For GPS, see:
-- [Global Positioning System](./docs/GPS.MD)
+For IMU, see: [Inertial Measurement Unit](./docs/IMU.MD)
 
-For IMU, see:
-- [Inertial Measurement Unit](./docs/IMU.MD)
-
-For Motor Control, see:
-- [Motor Control](./docs/motors.MD)
+For Motor Control, see: [Motor Control](./docs/motors.MD)
