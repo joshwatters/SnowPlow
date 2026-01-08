@@ -1,4 +1,4 @@
-### Snow Plow General Functionality and Operability
+## Snow Plow General Functionality and Operability
 
 Quick Start Guide:
 ## 1. Lidar IP Configuration:
