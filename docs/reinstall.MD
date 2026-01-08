@@ -13,8 +13,6 @@ Upon successful installation of 22.04 for Jetson, proceed to the ROS2 humble ins
 
 - [ROS2](https://docs.ros.org/en/humble/Installation.html) 
 - Go through talker and listener to confirm ROS2 install is complete. ^^
-- Install the Colcon Build Packages you want: Lidar, Slam toolbox, Nav2, turtlebot etc. Currently this project is only using the Lidar found separately below.
-- [Info About Colcon Build](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html)
 
 ## Lidar Installation
 Vision Systems:
