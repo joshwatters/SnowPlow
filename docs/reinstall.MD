@@ -15,6 +15,9 @@ Upon successful installation of 22.04 for Jetson, proceed to the ROS2 humble ins
 - [ROS2](https://docs.ros.org/en/humble/Installation.html) 
 - Go through talker and listener to confirm ROS2 install is complete.
 
+Clone this repository:
+- Create a folder on the desktop named 'Sandbox' and clone this repository into it. This will maintain the file structure written into many of the scripts.
+
 ## Lidar Installation
 
 Vision Systems:
