@@ -60,20 +60,18 @@ ros2 topic list
 Before running Any command in ROS2 you must source the environment. If the environment is not sourced. You can source it on humble by running:
 
 ```
+# Source the environment
 source /opt/ros/humble/setup.bash
-```
 
-## The file locations may be different on the snowplow. this command can be updated but feel free to use as a template.
-
-```
 # Change Directory to launch folder
 cd /opt/ros/humble/share/sick_scan_xd/launch
 
+# run sick scan
 ros2 run sick_scan_xd sick_generic_caller sick_lms_5xx.launch
 hostname:=192.168.1.2
 ```
 
-Previous Command that needs to be updated
+Previous command that needs to be updated
 
 ```
 python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
