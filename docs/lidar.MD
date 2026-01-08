@@ -62,11 +62,8 @@ nmcli con up "static-enP8p1s0"
 
 ```
 source /opt/ros/humble/setup.bash
-```
 
-## The file locations may be different on the snowplow. this command can be updated but feel free to use as a template.
-
-```
+# The file locations may be different on the snowplow. this command can be updated but feel free to use as a template.
 # Change Directory to launch folder
 cd /opt/ros/humble/share/sick_scan_xd/launch
 
