@@ -29,11 +29,8 @@ Snowplow's implementation is a little more complex. There are several methods of
 Currently the Raspberry PI runs a python script that collects RTK data from a second source and pipes that back over usb to zed gps. The scripts are located in a gps folder in this repository. There are several options for this however the current implementation is this.
 The Only Device that requires Wifi is the RPI.
 
-Wifi should be set to:
-
-Network: iBrick (2)
-
-Password: password
+Wifi is currently set to: Network: iBrick (2), Password: password. This can be changed to match the hotspot the team uses.
+.
 - [Ames, Iowa](../rpi/AmesCorrectionData.sh)
 - [St Paul, Minnesota](../rpi/StPaulCorrectionData.sh)
 
