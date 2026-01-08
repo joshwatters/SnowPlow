@@ -32,18 +32,19 @@ ros2 run sick_scan_xd sick_generic_caller sick_lms_5xx.launch
 hostname:=192.168.1.2
 ```
 
-
 ## 2. Additional Sensor Data Publishing to ROS2 Topic:
 
 ```
 # Detect which sensor maps to each dev ie ACM0, ACM1 and use the logic pathing and main.py
+source /opt/ros/humble/setup.bash
 python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Sensor_Detect.py 
 
 # Start the nodes with the data
+source /opt/ros/humble/setup.bash
 python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py
 ```
 
-GPS: [GPS Overview](GPS.MD), IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview](lidar.MD)
+ IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview](lidar.MD)
 
 ```
 # Each data source should have a topic. Confirm data is being collected at the following locations:
@@ -51,17 +52,20 @@ GPS: [GPS Overview](GPS.MD), IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview
 source /opt/ros/humble/setup.bash
 ros2 topic list
 ```
+# Start the gps node:
+GPS: [GPS Overview](GPS.MD)
+
+source /opt/ros/humble/setup.bash
+python3 /home/jetson/Desktop/Sandbox/SnowPlow/test/test_mock_gps.py
 
 ## 3. Complete Any Preflight Checklists and Safety Measures:
 
-
 ## 4. Start the Machine:
 Running In Operational Mode with Movement:
-(Before running the main function, we need all sensor data publishing. Start sick_scan_xd, Arduino_Node, and GPS_Node)
+(Before running the main function, we need all sensor data publishing.)
 
 > [!WARNING] 
 > THIS COMMAND STARTS THE MOTORS.
-
 
 It will be something like this. This needs further review:
 
@@ -69,11 +73,12 @@ It will be something like this. This needs further review:
 /home/jetson/Desktop/Sandbox/SnowPlow/src/Serial_Detect.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
 
 # Start the robot with dummy GPS, and actual IMU and LIDAR. IMU and lidar must be attached:
-python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/IMU_Node.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/test/test_mock_gps.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
+source /opt/ros/humble/setup.bash
+python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Serial_Detect.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/IMU_Node.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/test/test_mock_gps.pyy & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
 
 # Start the robot with actual GPS, IMU and LIDAR attached and clear view of the sky:
 # (Use This Outside Only after familiarizing yourself with the main.py script)
-
+python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Serial_Detect.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/IMU_Node.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/GPS_Node.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
 
 # This function will initialize the robot and lidar, create the object map with lidar data,
 # and begin motion of the robot:
