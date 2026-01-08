@@ -44,3 +44,6 @@ For module GPS, see:
 
 For module IMU, see:
 - [Inertial Measurement Unit](./docs/IMU.MD)
+
+  For module Motor Control, see:
+- [Motor Control](./docs/motors.MD)
