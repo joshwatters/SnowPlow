@@ -47,12 +47,12 @@ GPS: [GPS Overview](GPS.MD), IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview
 
 ```
 # Each data source should have a topic. Confirm data is being collected at the following locations:
-IMU = '/imu/magnetometer', GPS = '/gps_pose', Lidar = '/cloud', Motors = '/left_motor/speed', '/right_motor/speed'
+# IMU = '/imu/magnetometer', GPS = '/gps_pose', Lidar = '/cloud', Motors = '/left_motor/speed', '/right_motor/speed'
 source /opt/ros/humble/setup.bash
 ros2 topic list
 ```
 
-## 4. Complete Any Preflight Checklists and Safety Measures:
+## 3. Complete Any Preflight Checklists and Safety Measures:
 
 
 ## 4. Start the Machine:
@@ -63,7 +63,7 @@ Running In Operational Mode with Movement:
 > THIS COMMAND STARTS THE MOTORS.
 
 
-It will be something like this:
+It will be something like this. This needs further review:
 
 ```
 /home/jetson/Desktop/Sandbox/SnowPlow/src/Serial_Detect.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
