@@ -24,11 +24,9 @@ An example of reading from serial in python looks like this:
 
 Snowplow's implementation is a little more complex. There are several methods of configuration for the Real Time Kinematic setup. One Zed-f9p is located on the snow plow. Real time kinematics involves an additional stationary gps base station that feeds correction data. This improves the accuracy to a point it is useable for competition. The normal method seen above recieves longitude and latitude but without thumbnail precision. In adding a second data source we are able to triangulate and further improve the accuracy. This is the reason the Raspberry PI is present currently. 
 
-- [Ames, Iowa](../rpi/AmesCorrectionData.sh)
-- [St Paul, Minnesota](../rpi/StPaulCorrectionData.sh)
+## Real Time Kinematic Data
 
-The RPI must be connected to a mobile hotspot on someones phone in order to be able to retrieve the correction data. Additionally one script needs to be run from the desktop. One is for Iowa and one is for Minnesota (competition location). Both scripts access publicly available gps data. Just connect to wifi and run the script. The bluetooth method has been tested but requires an app instead of a wifi hotspot.
-
+Currently the Raspberry PI runs a python script that collects RTK data from a second source and pipes that back over usb to zed gps. The scripts are located in a gps folder in this repository. There are several options for this however the current implementation is this.
 The Only Device that requires Wifi is the RPI.
 
 Wifi should be set to:
@@ -36,16 +34,18 @@ Wifi should be set to:
 Network: iBrick (2)
 
 Password: password
+- [Ames, Iowa](../rpi/AmesCorrectionData.sh)
+- [St Paul, Minnesota](../rpi/StPaulCorrectionData.sh)
+
+The RPI must be connected to a mobile hotspot on someones phone in order to be able to retrieve the correction data. Additionally one script needs to be run from the desktop. One is for Iowa and one is for Minnesota (competition location). Both scripts access publicly available gps data. Just connect to wifi and run the script. The bluetooth method has been tested but requires an app instead of a wifi hotspot.
 
 ## The GPS used for this project is:
 
 - [Product Specs](https://www.sparkfun.com/sparkfun-gps-rtk-sma-kit.html)
 
-## There are provided code examples:
+## There are provided examples:
 
 - [GPS Hookup Guide](https://learn.sparkfun.com/tutorials/gps-rtk2-hookup-guide)
-
-## The wiring diagram shows a cell phone. For more info:
 
 - [Connect to a Correction Source](https://learn.sparkfun.com/tutorials/gps-rtk2-hookup-guide/connecting-the-zed-f9p-to-a-correction-source)
 
@@ -57,9 +57,6 @@ Password: password
 
 - [Datasheet](./ZED-F9P-02B_DataSheet_UBX-21023276.pdf)
 
-## Real Time Kinematic Data
-
-Currently the Raspberry PI runs a python script that collects RTK data from a second source and pipes that back over usb to zed gps. The scripts are located in a gps folder in this repository. There are several options for this however the current implementation is this.
 
 ## Our implementation and scripts that reference the GPS:
 
