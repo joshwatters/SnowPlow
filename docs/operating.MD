@@ -16,10 +16,7 @@ nc -z -v -w5 192.168.1.2 2112
 
 If improperly configured, it will fail with the message Network is unreachable. No progress can be made until this connects. 
 
-If network is unreachable view and follow the steps for IP configuration.
-
-Lidar: 
-- [Lidar Overview](lidar.MD)
+If network is unreachable view and follow the steps for IP configuration. Lidar: [Lidar Overview](lidar.MD)
 
 Otherwise proceed with:
 
