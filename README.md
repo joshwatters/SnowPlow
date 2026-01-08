@@ -44,7 +44,3 @@ For module GPS, see:
 
 For module IMU, see:
 - [Inertial Measurement Unit](./docs/IMU.MD)
-
-## Releases
-
-**The README for the `1.x` version is on the [v1.x](./tree/v1.x) branch.**
