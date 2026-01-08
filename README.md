@@ -25,3 +25,9 @@ For GPS: [Global Positioning System](./docs/GPS.MD)
 For IMU: [Inertial Measurement Unit](./docs/IMU.MD)
 
 For Motor Control: [Motor Control](./docs/motors.MD)
+
+## Test Bench
+Alternatively if the team wants to test on a ROS2 Environment:
+
+**https://docs.ros.org/en/humble/How-To-Guides/Run-2-nodes-in-single-or-separate-docker-containers.html**
+Create a folder on the desktop named Sandbox and clone the repository inside the folder.
