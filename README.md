@@ -20,8 +20,8 @@ For Pathing: [Pathing](./docs/pathing.MD)
 
 For Lidar: [Lidar](./docs/lidar.MD)
 
+For Motor Control: [Motor Control](./docs/motors.MD)
+
 For GPS: [Global Positioning System](./docs/GPS.MD)
 
 For IMU: [Inertial Measurement Unit](./docs/IMU.MD)
-
-For Motor Control: [Motor Control](./docs/motors.MD)
