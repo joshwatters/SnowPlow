@@ -14,7 +14,7 @@ For General Operating Procedures: [Operating Procedure](./docs/operating.MD)
 
 ## Snow Plow Info
 
-In the event of a catastrophic failure and a complete re-install is nessecary: [Reinstallation](./docs/reinstall.MD)
+In the event of a catastrophic failure and a complete re-install is nessecary: [Re-installation](./docs/reinstall.MD)
 
 For Pathing: [Pathing](./docs/pathing.MD)
 
