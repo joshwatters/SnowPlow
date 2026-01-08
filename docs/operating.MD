@@ -42,8 +42,7 @@ IMU: [IMU Overview](IMU.MD)
 
 Motor: [Motor Overview](lidar.MD)
 
-
-## 3. Confirm All Data is Being Collected:
+Confirm All Data is Being Collected:
 
 The software checks for data in the following locations. Confirm you have topics live in each or return to the respective sensors help file.
 
