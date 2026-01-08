@@ -38,9 +38,7 @@ hostname:=192.168.1.2
 
 GPS: [GPS Overview](GPS.MD), IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview](lidar.MD)
 
-Confirm All Data is Being Collected:
-
-The software checks for data in the following locations. Confirm you have topics live in each or return to the respective sensors help file.
+Confirm data is being collected at the following locations:
 
 IMU = '/imu/magnetometer'
 
