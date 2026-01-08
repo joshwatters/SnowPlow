@@ -13,7 +13,6 @@ To ensure proper configuration, double check the following items and run the com
 nc -z -v -w5 192.168.1.2 2112
 ```
 
-
 If improperly configured, it will fail with the message Network is unreachable. No progress can be made until this connects. 
 
 If network is unreachable view and follow the steps for IP configuration. 
@@ -36,6 +35,12 @@ hostname:=192.168.1.2
 
 ## 2. Additional Sensor Data Publishing to ROS2 Topic:
 
+# Detect which sensor maps to each dev ie ACM0, ACM1 and use the logic pathing and main.py
+python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Sensor_Detect.py 
+
+# Start the nodes with the data
+python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py
+
 GPS: [GPS Overview](GPS.MD), IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview](lidar.MD)
 
 Confirm data is being collected at the following locations:
@@ -54,7 +59,7 @@ ros2 topic list
 
 ## 4. Start the Machine:
 Running In Operational Mode with Movement:
-(Before running the main function, we need to start sick_scan_xd, Arduino_Node, and GPS_Node)
+(Before running the main function, we need all sensor data publishing. Start sick_scan_xd, Arduino_Node, and GPS_Node)
 
 > [!WARNING] 
 > THIS COMMAND STARTS THE MOTORS.
