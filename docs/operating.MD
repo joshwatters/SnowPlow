@@ -65,15 +65,7 @@ ros2 topic list
 
 
 ## 4. Start the Machine:
-Before running Any command in ROS2 you must source the environment. If the environment is not sourced. You can source it on humble by running:
-
-Previous command that needs to be updated
-
-```
-python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
-```
-
-## Running In Operational Mode with Movement:
+Running In Operational Mode with Movement:
 
 > [!WARNING]
 
@@ -83,29 +75,20 @@ python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd 
 It will be something like this:
 
 ```
-/home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/Serial_Detect.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/Arduino_Node.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/Arduino_Node.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
+/home/jetson/Desktop/Sandbox/SnowPlow/src/Serial_Detect.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
 
 # Here is the previous command:
 
 python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
+
  ```
-
-
-
-
-
-
 Start the robot with actual GPS, IMU and LIDAR attached and clear view of the sky:
 (Use This Outside Only after familiarizing yourself with the main.py script)
 
 This function will initialize the robot and lidar, create the object map with lidar data,
 and begin motion of the robot:
-
 ```
+
 python3 src/main.py
 
-```
-
-```
-python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/IMU.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/test/test_mock_gps.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/main.py & ros2 run sick_scan_xd /opt/ros/humble/share/sick_scan_xd/launch/sick_generic_caller sick_scan_xd_test.launch
 ```
