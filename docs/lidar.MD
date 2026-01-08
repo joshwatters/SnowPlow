@@ -44,10 +44,10 @@ sudo apt-get install ros-humble-sick-scan-xd
 ```
 
 Quick Start Guide:
-## 1. IP Configuration Must Be Completed First:
+##### 1. IP Configuration Must Be Completed First:
 Set IP for Lidar through Sopas on Windows to 192.168.1.2
 
-## 2.Set IP for Jetson nano and disable WiFi. On Jetson, terminal command: 
+##### 2. Set IP for Jetson nano and disable WiFi. On Jetson, terminal command: 
 
 ```
 ifconfig 
