@@ -51,26 +51,15 @@ Set IP for Lidar through Sopas on Windows to 192.168.1.2
 
 ```
 ifconfig 
-```
-
-Produces the following output:
-
-```
+# Produces the following output:
 enP8p1s0:Realtek Semiconductor Co.\, Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
-
 wlP1p1s0:Realtek Semiconductor Co.\, Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
-```
-
-Look through devices for ID of Ethernet
-
-```
+# Look through devices for ID of Ethernet
 enP8p1s0
 ifconfig enP8p1s0
 nmcli con add con-name "static-enP8p1s0" ifname enP8p1s0 type ethernet ip4 192.168.1.1/16 gw4 192.168.1.1
 nmcli con up "static-enP8p1s0"
 ```
-
-<img src="./JetsonIP.png" width="360" height="243" />
 
 ## Before running Any command in ROS2 you must source the environment. If the environment is not sourced. You can source it on humble by running:
 
