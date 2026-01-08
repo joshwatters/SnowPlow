@@ -1,4 +1,4 @@
-# Autonomous Snowplow - Pathing
+## Autonomous Snowplow - Pathing
 ## About Lidar
 
 Pathing utilizes almost all files in the src folder. 
