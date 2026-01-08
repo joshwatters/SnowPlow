@@ -24,7 +24,7 @@ Sick Lidar w/ imu
 - [Getting Started with the Sick 511 Video Series](https://support.sick.com/sick-knowledgebase/article/?code=KA-09385)
 - [Lidar](/docs/lidar.MD)
 
-## Pathing Options
+## Future Pathing Options
 
 Slam Toolbox
 - [Slam](/docs/slam.MD)
