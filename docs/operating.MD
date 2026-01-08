@@ -57,8 +57,7 @@ ros2 topic list
 
 
 ## 4. Start the Machine:
-
-## Before running Any command in ROS2 you must source the environment. If the environment is not sourced. You can source it on humble by running:
+Before running Any command in ROS2 you must source the environment. If the environment is not sourced. You can source it on humble by running:
 
 ```
 source /opt/ros/humble/setup.bash
