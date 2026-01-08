@@ -83,17 +83,4 @@ Navigation System/Software - Errors in the navigation system can cause the snowp
 ## Failure Modes & Recovery Actions
 * Motor Chains - The motor chains disengage during use - Activate remote or physical E-Stop, Restore chain manually and safely
 * Batteries and Electronics - The batteries or electronics freeze up or exhibit reduced functionality because of cold temperatures - Engage heating system
-* Processors, Sensors, & Software - The robot takes an incorrect route during a run due to processing or sensing error - Activate remote or physical E-Stop, Terminate the path execution via SSH, Return robot to start point, Make any adjustments, Restart guidance software
-
-## Most software can be tested by pushing the Lidar around on a cart and logging data
-* Requires fewer people than a full driving test
-* Allowed us to test before the full robot is operational
-* Perform driving tests in the small parking lot next to the building
-* Mostly flat and we have permission to use it
-* Use freight elevator to get from the workshop to the test site 
-
-## Integrating new GPS system
-* Transitioning to ROS2
-* Transitioning to new computer (Jetson Nano Orin)
-* Robust but unwieldy existing robot frame
-* Integrating new plow lift mechanism
+* Processors, Sensors, & Software - The robot takes an incorrect route during a run due to processing or sensing error - Activate remote or physical E-Stop, Return robot to start point, Make any adjustments, Restart guidance software
