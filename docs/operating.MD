@@ -34,7 +34,7 @@ hostname:=192.168.1.2
 ```
 
 
-## 2. Sensor Data Publishing to ROS2 Topic:
+## 2. Additional Sensor Data Publishing to ROS2 Topic:
 
 GPS: [GPS Overview](GPS.MD), IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview](lidar.MD)
 
