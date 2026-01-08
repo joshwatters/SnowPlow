@@ -75,6 +75,10 @@ python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd 
 
 ## Running In Operational Mode with Movement:
 
+> [!WARNING]
+
+> WARNING! THIS COMMAND STARTS THE MOTORS.
+
 (Before running the main function, we need to start sick_scan_xd, Arduino_Node, and GPS_Node)
 It will be something like this:
 
@@ -87,11 +91,7 @@ python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd 
  ```
 
 
-## Running the Main Function:
 
-> [!WARNING]
-
-> WARNING! THIS COMMAND STARTS THE MOTORS.
 
 
 
