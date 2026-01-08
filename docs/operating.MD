@@ -34,8 +34,21 @@ Motor:
 - [Motor Overview](lidar.MD)
 
 
-## 3. Confirm All Data is Being Captured"
+## 3. Confirm All Data is Being Collected:
 
+```
+# Each data source should have a topic
+source /opt/ros/humble/setup.bash
+ros2 topic list
+
+# The software checks for data in the following locations. Confirm you have topics live in each or return to the respective sensors help file.
+
+# IMU = '/imu/magnetometer'
+# GPS = '/gps_pose'
+# Lidar = '/cloud'
+# Motors = '/left_motor/speed', '/right_motor/speed'
+
+```
 
 ## 4. Complete Any Preflight Checklists and Safety Measures:
 
