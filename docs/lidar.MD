@@ -53,7 +53,7 @@ Set IP for Lidar through Sopas on Windows to 192.168.1.2
 ifconfig 
 ```
 
-## Produces the following output:
+Produces the following output:
 
 ```
 enP8p1s0:Realtek Semiconductor Co.\, Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
@@ -61,7 +61,7 @@ enP8p1s0:Realtek Semiconductor Co.\, Ltd. RTL8111/8168/8411 PCI Express Gigabit 
 wlP1p1s0:Realtek Semiconductor Co.\, Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
 ```
 
-## Look through devices for ID of Ethernet
+Look through devices for ID of Ethernet
 
 ```
 enP8p1s0
