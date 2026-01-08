@@ -16,7 +16,8 @@ nc -z -v -w5 192.168.1.2 2112
 
 If improperly configured, it will fail with the message Network is unreachable. No progress can be made until this connects. 
 
-If network is unreachable view and follow the steps for IP configuration. Lidar: [Lidar Overview](lidar.MD)
+If network is unreachable view and follow the steps for IP configuration. 
+-Lidar: [Lidar Overview](lidar.MD)
 
 Otherwise proceed with:
 
@@ -35,14 +36,11 @@ hostname:=192.168.1.2
 
 ## 2. Sensor Data Must Be Publishing to ROS2 Topic:
 
-GPS: 
-- [GPS Overview](GPS.MD)
+GPS: [GPS Overview](GPS.MD)
 
-IMU: 
-- [IMU Overview](IMU.MD)
+IMU: [IMU Overview](IMU.MD)
 
-Motor: 
-- [Motor Overview](lidar.MD)
+Motor: [Motor Overview](lidar.MD)
 
 
 ## 3. Confirm All Data is Being Collected:
