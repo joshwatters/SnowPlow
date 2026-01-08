@@ -40,8 +40,6 @@ The RPI must be connected to a mobile hotspot on someones phone in order to be a
 
 - [Product Specs](https://www.sparkfun.com/sparkfun-gps-rtk-sma-kit.html)
 
-## There are provided examples:
-
 - [GPS Hookup Guide](https://learn.sparkfun.com/tutorials/gps-rtk2-hookup-guide)
 
 - [Connect to a Correction Source](https://learn.sparkfun.com/tutorials/gps-rtk2-hookup-guide/connecting-the-zed-f9p-to-a-correction-source)
