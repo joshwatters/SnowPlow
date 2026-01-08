@@ -40,13 +40,7 @@ GPS: [GPS Overview](GPS.MD), IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview
 
 Confirm data is being collected at the following locations:
 
-IMU = '/imu/magnetometer'
-
-GPS = '/gps_pose'
-
-Lidar = '/cloud'
-
-Motors = '/left_motor/speed', '/right_motor/speed'
+IMU = '/imu/magnetometer', GPS = '/gps_pose', Lidar = '/cloud', Motors = '/left_motor/speed', '/right_motor/speed'
 
 Each data source should have a topic.
 
