@@ -29,6 +29,8 @@ Sick Lidar w/ imu
 
 ## Future Pathing Options
 
+These are not currently used but can be considered by future teams.
+
 Slam Toolbox
 - [Slam](/docs/slam.MD)
 
@@ -37,8 +39,6 @@ Nav 2
 
 
 Path Planning:
-These are not currently used but can be considered by future teams.
-
 Path planning is facilitated by the previous generations git repo: 
 
 - [SnowPlow2021](https://github.com/ISURobotics/SnowPlow2021)
