@@ -28,7 +28,7 @@ Project Overview:
 Repository to be cloned directly to the Jetson Nano on the autonomous Snow Plow Project
 In the event of a catastrophic failure and a complete re-install is nessecary, see:
 
-- [Reinstall](./docs/reinstall.MD)
+- [Reinstallation](./docs/reinstall.MD)
 
 For General Operating Procedures, see:
 - [Operating Procedure](./docs/operating.MD)
