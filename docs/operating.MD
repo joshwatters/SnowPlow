@@ -64,18 +64,18 @@ It will be something like this:
 ```
 /home/jetson/Desktop/Sandbox/SnowPlow/src/Serial_Detect.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py & python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
 
-# Here is the previous command:
-
+```
+# Start the robot with dummy GPS, and actual IMU and LIDAR. IMU and lidar must be attached:
 python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
 
- ```
-Start the robot with actual GPS, IMU and LIDAR attached and clear view of the sky:
-(Use This Outside Only after familiarizing yourself with the main.py script)
+# Start the robot with actual GPS, IMU and LIDAR attached and clear view of the sky:
+# (Use This Outside Only after familiarizing yourself with the main.py script)
 
-This function will initialize the robot and lidar, create the object map with lidar data,
-and begin motion of the robot:
-```
 
+# This function will initialize the robot and lidar, create the object map with lidar data,
+# and begin motion of the robot:
+
+source /opt/ros/humble/setup.bash
 python3 src/main.py
 
 ```
