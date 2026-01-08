@@ -35,21 +35,19 @@ hostname:=192.168.1.2
 
 ## 2. Additional Sensor Data Publishing to ROS2 Topic:
 
+```
 # Detect which sensor maps to each dev ie ACM0, ACM1 and use the logic pathing and main.py
 python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Sensor_Detect.py 
 
 # Start the nodes with the data
 python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py
+```
 
 GPS: [GPS Overview](GPS.MD), IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview](lidar.MD)
 
-Confirm data is being collected at the following locations:
-
-IMU = '/imu/magnetometer', GPS = '/gps_pose', Lidar = '/cloud', Motors = '/left_motor/speed', '/right_motor/speed'
-
-Each data source should have a topic.
-
 ```
+# Each data source should have a topic. Confirm data is being collected at the following locations:
+IMU = '/imu/magnetometer', GPS = '/gps_pose', Lidar = '/cloud', Motors = '/left_motor/speed', '/right_motor/speed'
 source /opt/ros/humble/setup.bash
 ros2 topic list
 ```
