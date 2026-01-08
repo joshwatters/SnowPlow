@@ -29,6 +29,6 @@ For Motor Control: [Motor Control](./docs/motors.MD)
 ## Test Bench
 Alternatively if the team wants to test on a ROS2 Environment without being on campus:
 
-**https://docs.ros.org/en/humble/How-To-Guides/Run-2-nodes-in-single-or-separate-docker-containers.html**
+For Test Bench: [Test Bench](https://docs.ros.org/en/humble/How-To-Guides/Run-2-nodes-in-single-or-separate-docker-containers.html)
 
 Create a folder on the desktop named Sandbox and clone the repository inside the folder.
