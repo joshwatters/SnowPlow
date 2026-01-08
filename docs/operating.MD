@@ -21,6 +21,20 @@ If network is unreachable view and follow the steps for IP configuration.
 Lidar: 
 - [Lidar Overview](lidar.MD)
 
+Otherwise proceed with:
+
+```
+# Source the environment
+source /opt/ros/humble/setup.bash
+
+# Change Directory to launch folder
+cd /opt/ros/humble/share/sick_scan_xd/launch
+
+# run sick scan
+ros2 run sick_scan_xd sick_generic_caller sick_lms_5xx.launch
+hostname:=192.168.1.2
+```
+
 
 ## 2. Sensor Data Must Be Publishing to ROS2 Topic:
 
@@ -58,18 +72,6 @@ ros2 topic list
 
 ## 4. Start the Machine:
 Before running Any command in ROS2 you must source the environment. If the environment is not sourced. You can source it on humble by running:
-
-```
-# Source the environment
-source /opt/ros/humble/setup.bash
-
-# Change Directory to launch folder
-cd /opt/ros/humble/share/sick_scan_xd/launch
-
-# run sick scan
-ros2 run sick_scan_xd sick_generic_caller sick_lms_5xx.launch
-hostname:=192.168.1.2
-```
 
 Previous command that needs to be updated
 
