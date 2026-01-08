@@ -42,7 +42,60 @@ Motor:
 
 ##### 4. Start the Machine:
 
-Notes of mostly functional commands that can be used to construct the startup logic.
+## Before running Any command in ROS2 you must source the environment. If the environment is not sourced. You can source it on humble by running:
+
+```
+source /opt/ros/humble/setup.bash
+```
+
+## The file locations may be different on the snowplow. this command can be updated but feel free to use as a template.
+
+```
+# Change Directory to launch folder
+cd /opt/ros/humble/share/sick_scan_xd/launch
+
+ros2 run sick_scan_xd sick_generic_caller sick_lms_5xx.launch
+hostname:=192.168.1.2
+```
+
+Previous Command that needs to be updated
+
+```
+python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
+```
+
+## Running In Operational Mode with Movement:
+
+(Before running the main function, we need to start sick_scan_xd, Arduino_Node, and GPS_Node)
+It will be something like this:
+
+```
+/home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/Serial_Detect.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/Arduino_Node.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/Arduino_Node.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
+
+# Here is the previous command:
+
+python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
+ ```
+
+
+## Running the Main Function:
+
+> [!WARNING]
+
+> WARNING! THIS COMMAND STARTS THE MOTORS.
+
+
+
+Start the robot with actual GPS, IMU and LIDAR attached and clear view of the sky:
+(Use This Outside Only after familiarizing yourself with the main.py script)
+
+This function will initialize the robot and lidar, create the object map with lidar data,
+and begin motion of the robot:
+
+```
+python3 src/main.py
+
+```
 
 ```
 python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/IMU.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/test/test_mock_gps.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/main.py & ros2 run sick_scan_xd /opt/ros/humble/share/sick_scan_xd/launch/sick_generic_caller sick_scan_xd_test.launch
