@@ -37,6 +37,7 @@ Nav 2
 
 
 Path Planning:
+These are not currently used but can be considered by future teams.
 
 Path planning is facilitated by the previous generations git repo: 
 
