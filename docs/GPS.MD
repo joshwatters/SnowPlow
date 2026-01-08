@@ -25,7 +25,7 @@ An example of reading from serial in python looks like this:
 Snowplow's implementation is a little more complex. There are several methods of configuration for the Real Time Kinematic setup. One Zed-f9p is located on the snow plow. Real time kinematics involves an additional stationary gps base station that feeds correction data. This improves the accuracy to a point it is useable for competition. The normal method seen above recieves longitude and latitude but without thumbnail precision. In adding a second data source we are able to triangulate and further improve the accuracy. This is the reason the Raspberry PI is present currently. 
 
 - [Ames, Iowa](../rpi/AmesCorrectionData.sh)
-- [StPaul, Minnesota](../rpi/StPaulCorrectionData.sh)
+- [St Paul, Minnesota](../rpi/StPaulCorrectionData.sh)
 
 The RPI must be connected to a mobile hotspot on someones phone in order to be able to retrieve the correction data. Additionally one script needs to be run from the desktop. One is for Iowa and one is for Minnesota (competition location). Both scripts access publicly available gps data. Just connect to wifi and run the script. The bluetooth method has been tested but requires an app instead of a wifi hotspot.
 
