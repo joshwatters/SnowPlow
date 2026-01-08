@@ -53,7 +53,6 @@ ifconfig
 
 ## Produces the following output:
 
-
 ```
 enP8p1s0:Realtek Semiconductor Co.\, Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
 
@@ -61,6 +60,7 @@ wlP1p1s0:Realtek Semiconductor Co.\, Ltd. RTL8822CE 802.11ac PCIe Wireless Netwo
 ```
 
 ## Look through devices for ID of Ethernet
+
 ```
 enP8p1s0
 ifconfig enP8p1s0
@@ -86,52 +86,17 @@ ros2 run sick_scan_xd sick_generic_caller sick_lms_5xx.launch
 hostname:=192.168.1.2
 ```
 
-Previous Command that needs to be updated
-
-```
-python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
-```
-
-## Running In Operational Mode with Movement:
-
-(Before running the main function, we need to start sick_scan_xd, Arduino_Node, and GPS_Node)
-It will be something like this:
-```
-/home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/Serial_Detect.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/Arduino_Node.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/Arduino_Node.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
-
-# Here is the previous command:
-
-python3 src/IMU_Node.py & python3 test/test_mock_gps.py & ros2 run sick_scan_xd sick_generic_caller sick_scan_xd_test.launch
- ```
-
-
-## Running the Main Function:
-
-> [!WARNING]
-
-> WARNING! THIS COMMAND STARTS THE MOTORS.
-
-
-
-Start the robot with actual GPS, IMU and LIDAR attached and clear view of the sky:
-(Use This Outside Only after familiarizing yourself with the main.py script)
-
-This function will initialize the robot and lidar, create the object map with lidar data,
-and begin motion of the robot:
-
-```
-python3 src/main.py
-
-```
-
-
 Runs RVIZ:
+
 ```
 source /opt/ros/humble/setup.bash
 ros2 run rviz2 rviz2
 ```
+
 <img src="./LidarImage.png" width="360" height="243" />
+
 <img src="./RVIZ.png" width="360" height="243" />
+
 <img src="./RVIZ2.png" width="360" height="243" />
 
 For LMS5xx-family:
