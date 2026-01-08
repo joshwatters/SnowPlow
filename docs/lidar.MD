@@ -10,11 +10,11 @@ The lidar used for this project is:
 To help visualize what is happening:
 
 
-* Cartesian:
+##### Cartesian:
 
 <img src="./Lidar1.PNG" width="350" height="300" />
 
-* Polar Coordinates:
+##### Polar Coordinates:
 
 <img src="./Lidar2.PNG" width="350" height="300" />
 
