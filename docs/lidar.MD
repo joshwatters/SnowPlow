@@ -24,7 +24,7 @@ involves using the sick_scan_xd packages that "publish" data over a ROS2 topic. 
 It is in here to show how to parse a packet if the team decides to stray from ROS2.) This data is retrieved from the topic and used to map the snowplow to a grid. 
 More or less we scan, then generate a map on an x,y and ultimately use Dijkstra's for path planning.
 
-The physical connection is insert the ethernet into the Jetson and supply 24v. The Jetson's onboard Wifi must be disabled for the current configuration to work.
+The physical connection is insert the ethernet into the Jetson and supply 24v via the quick connector. The Jetson's onboard Wifi must be disabled for the current configuration to work.
 
 To ensure proper configuration, double check the following items and run the command:
 
