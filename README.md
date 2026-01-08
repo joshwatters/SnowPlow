@@ -27,7 +27,7 @@ For IMU: [Inertial Measurement Unit](./docs/IMU.MD)
 For Motor Control: [Motor Control](./docs/motors.MD)
 
 ## Test Bench
-Alternatively if the team wants to test on a ROS2 Environment:
+Alternatively if the team wants to test on a ROS2 Environment without being on campus:
 
 **https://docs.ros.org/en/humble/How-To-Guides/Run-2-nodes-in-single-or-separate-docker-containers.html**
 
