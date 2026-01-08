@@ -1,0 +1,1 @@
+python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/IMU.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/test/test_mock_gps.py & python3 /home/jetson/Desktop/Sandbox/Snow-Plow-On-Jetson/src/main.py & ros2 run sick_scan_xd /opt/ros/humble/share/sick_scan_xd/launch/sick_generic_caller sick_scan_xd_test.launch
