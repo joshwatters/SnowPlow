@@ -23,37 +23,8 @@ Project Overview:
   While documentation for standard Isaac Sim can be seen at:
   
   - [Isaac Lab](https://docs.isaacsim.omniverse.nvidia.com/latest/robot_simulation/index.html)
-  
-## Snow Plow features
 
-- most functionality can be viewed within the scripts contained in the [src](./src) folder.
-- For simplicity singular programming language "Python" was used for most programming.
-- C++ was added for sensor package functionality to allow for arduino code-reusability (Examples included).
-- Code has been internally commented for ease of use.
-
-## Usage
-
-If you have GIT configured, quickly deploy using `cmd`:
-```bash
-cd /Home/
-mkdir Sandbox
-cd /Sandbox/
-```
-
-```bash
-git clone https://github.com/ISURobotics/SnowPlowComplete/
-```
-
-```bash
-$ git clone https://github.com/ISUrobotics/SnowPlowComplete/
-> Cloning into `Folder`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
-
-## Snow-Plow-On-Jetson
+## SnowPlow
 Repository to be cloned directly to the Jetson Nano on the autonomous Snow Plow Project
 In the event of a catastrophic failure and a complete re-install is nessecary, see:
 
