@@ -1,7 +1,7 @@
 ### Snow Plow General Functionality and Operability
 
 Quick Start Guide:
-##### 1. Lidar IP Configuration Must Be Completed First:
+## 1. Lidar IP Configuration Must Be Completed First:
 Before the lidar will function, IP configuration must be complete or the Lidar will not be able to recieve packets. The current implementation 
 involves using the sick_scan_xd packages that "publish" data over a ROS2 topic. (This is different from the script that is being used to generate the above images; 
 It is in here to show how to parse a packet if the team decides to stray from ROS2.) This data is retrieved from the topic and used to map the snowplow to a grid. 
@@ -22,7 +22,7 @@ Lidar:
 - [Lidar Overview](lidar.MD)
 
 
-##### 2. Sensor Data Must Be Publishing to ROS2 Topic:
+## 2. Sensor Data Must Be Publishing to ROS2 Topic:
 
 GPS: 
 - [GPS Overview](GPS.MD)
@@ -34,13 +34,13 @@ Motor:
 - [Motor Overview](lidar.MD)
 
 
-##### 3. Confirm All Data is Being Captured"
+## 3. Confirm All Data is Being Captured"
 
 
-##### 4. Complete Any Preflight Checklists and Safety Measures:
+## 4. Complete Any Preflight Checklists and Safety Measures:
 
 
-##### 4. Start the Machine:
+## 4. Start the Machine:
 
 ## Before running Any command in ROS2 you must source the environment. If the environment is not sourced. You can source it on humble by running:
 
