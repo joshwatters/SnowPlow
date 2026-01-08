@@ -55,7 +55,8 @@ ros2 topic list
 ## 4. Start the Machine:
 Running In Operational Mode with Movement:
 
-> [!NOTE WARNING] WARNING! THIS COMMAND STARTS THE MOTORS.
+> [!WARNING] 
+> THIS COMMAND STARTS THE MOTORS.
 
 (Before running the main function, we need to start sick_scan_xd, Arduino_Node, and GPS_Node)
 It will be something like this:
