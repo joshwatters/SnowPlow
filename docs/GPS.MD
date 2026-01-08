@@ -50,8 +50,6 @@ The RPI must be connected to a mobile hotspot on someones phone in order to be a
 
 - [GPS info](http://monitor.use-snip.com/?hostUrl=rtk2go.com&port=2101)
 
-## Data Sheet:
-
 - [Datasheet](./ZED-F9P-02B_DataSheet_UBX-21023276.pdf)
 
 
