@@ -49,13 +49,8 @@ Motors = '/left_motor/speed', '/right_motor/speed'
 Each data source should have a topic.
 
 ```
-
-
 source /opt/ros/humble/setup.bash
 ros2 topic list
-
-
-
 ```
 
 ## 4. Complete Any Preflight Checklists and Safety Measures:
