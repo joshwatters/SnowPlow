@@ -13,6 +13,9 @@ lsusb
 stty -F /dev/ttyUSB0 115200
 cat /dev/ttyUSB0
 
+# Each data source should have a topic. Confirm data is being collected at the following locations:
+IMU = '/imu/magnetometer'
+
 # Detect which sensor maps to each dev ie ACM0, ACM1 and use the logic pathing and main.py
 source /opt/ros/humble/setup.bash
 python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Sensor_Detect.py 
