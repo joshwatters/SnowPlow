@@ -19,7 +19,7 @@
 # 2. Setup the correction data machine (Raspberry pi)
 #       - Ensure Serial Basic Breakout module (Tiny red board with usb c and 6ish output pins) is plugged into Raspberry Pi via usb c cable
 #       - Connect Serial Basic Breakout to GPS RTK 
-#           - Searial Basic Pin  | GPS RTK Pin
+#           - Serial Basic Pin  | GPS RTK Pin
 #                           TX0  | RX2 (One near USB C)
 #                           GND  | GND (One near RX2) 
 # 3. Turn on GPS by plugging it into Jetson Nano and powering on Jetson Nano

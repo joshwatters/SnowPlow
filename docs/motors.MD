@@ -16,7 +16,7 @@ cat /dev/ttyUSB0
 
 # Detect which sensor maps to each dev ie ACM0, ACM1 and use the logic pathing and main.py
 source /opt/ros/humble/setup.bash
-python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Sensor_Detect.py 
+python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Serial_Detect.py 
 
 # Each data source should have a topic. Confirm data is being collected at the following locations:
 Motors = '/left_motor/speed', '/right_motor/speed'

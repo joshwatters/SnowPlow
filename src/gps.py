@@ -1,7 +1,7 @@
 from serial import Serial
 from pyubx2 import UBXReader
 
-serial_port = "com7"
+serial_port = "/dev/ttyACM0"
 baud_rate = 115200
 
 try:

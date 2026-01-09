@@ -13,8 +13,8 @@ class Mock_GPS(Node):
 
     def __init__(self):
         super().__init__("gps_node")
-        # self.port = serial.Serial('/dev/ttyACM1', baudrate=9600, timeout=1)
-        # self.gps = UbloxGps(self.port)
+        self.port = serial.Serial('/dev/ttyACM0', baudrate=9600, timeout=1)
+        self.gps = UbloxGps(self.port)
         self.set_output_rate(10)
         self.origin = [0, 0]
         self.x = 0.0
