@@ -35,11 +35,7 @@ Path planning is facilitated by the previous generations git repo:
 
 These are not currently used but can be considered by future teams:
 
-Slam Toolbox
-- [Slam](/docs/slam.MD)
-
-Nav 2
-- [Nav 2](/docs/nav2.MD)
+Slam Toolbox - [Slam](/docs/slam.MD), Nav 2 - [Nav 2](/docs/nav2.MD)
 
 Upon successful installation, continue to :
 
