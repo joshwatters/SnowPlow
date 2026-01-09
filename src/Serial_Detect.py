@@ -37,6 +37,6 @@ for i in vals:
         print(str(i)+" is IMU!")
         imu=prefix+str(i)
 
-with open("serial_ports.txt",'w') as f:
+with open("../serial_ports.txt",'w') as f:
     f.write(rc+" "+imu+" "+gps)
     f.write("RC, IMU, GPS")

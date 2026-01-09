@@ -1,1 +1,1 @@
-COM5 no no
+/dev/ttyACM1 /dev/ttyACM0 /dev/ttyACM2

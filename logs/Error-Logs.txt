@@ -1,0 +1,14 @@
+python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/GPS_Node.py
+Done Calibrating IMU
+Traceback (most recent call last):
+  File "/home/jetson/Desktop/Sandbox/SnowPlow/src/GPS_Node.py", line 300, in <module>
+    main()
+  File "/home/jetson/Desktop/Sandbox/SnowPlow/src/GPS_Node.py", line 292, in main
+    gps.set_origin()                            # set the origin an starting orientation to whereever the Snowplow is and the direction it is facing
+  File "/home/jetson/Desktop/Sandbox/SnowPlow/src/GPS_Node.py", line 93, in set_origin
+    global_x, global_y = self.get_global_x_y(True)
+  File "/home/jetson/Desktop/Sandbox/SnowPlow/src/GPS_Node.py", line 146, in get_global_x_y
+    lat, lon = self.get_lat_lon(setting_origin)
+  File "/home/jetson/Desktop/Sandbox/SnowPlow/src/GPS_Node.py", line 107, in get_lat_lon
+    self.lat_factor = 111132.92 - 559.82*math.cos(2*math.radians(coords.lat)) + 1.175*math.cos(4*math.radians(coords.lat)) - 0.0023*math.cos(6*math.radians(coords.lat))
+AttributeError: 'NoneType' object has no attribute 'lat'
