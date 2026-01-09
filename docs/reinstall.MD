@@ -28,14 +28,11 @@ Sick Lidar w/ imu
 - [Lidar](/docs/lidar.MD)
 
 ## Pathing Options
-Path Planning:
 Path planning is facilitated by the previous generations git repo: 
 
 - [SnowPlow2021](https://github.com/ISURobotics/SnowPlow2021)
 
-These are not currently used but can be considered by future teams:
-
-Slam Toolbox - [Slam](/docs/slam.MD), Nav 2 - [Nav 2](/docs/nav2.MD)
+These are not currently used but can be considered by future teams: Slam Toolbox - [Slam](/docs/slam.MD), Nav 2 - [Nav 2](/docs/nav2.MD)
 
 Upon successful installation, continue to :
 
