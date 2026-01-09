@@ -44,7 +44,7 @@ source /opt/ros/humble/setup.bash
 python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py
 ```
 
- IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview](lidar.MD)
+ IMU: [IMU Overview](IMU.MD), Motor: [Motor Overview](motors.MD)
 
 ```
 # Each data source should have a topic. Confirm data is being collected at the following locations:
