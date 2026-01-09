@@ -4,7 +4,7 @@ The Snow Plow currently has multiple IMU. We use a separate BNO055 as opposed to
 
 
 
-For IMU: [Inertial Measurement Unit](./docs/adafruit-bno055-absolute-orientation-sensor.pdf)
+For IMU: [Inertial Measurement Unit](./adafruit-bno055-absolute-orientation-sensor.pdf)
 
 Currently we use the roll pitch and yaw values from the gyro read over serial.
 
