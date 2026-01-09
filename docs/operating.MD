@@ -52,7 +52,7 @@ python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py
 source /opt/ros/humble/setup.bash
 ros2 topic list
 ```
-# Start the gps node:
+## 3. Start the gps node:
 GPS: [GPS Overview](GPS.MD)
 
 source /opt/ros/humble/setup.bash
