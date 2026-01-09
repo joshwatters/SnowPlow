@@ -31,8 +31,8 @@ class Arduino_Node(Node):
         self.working_data = ""
         self.data_started = False
         # Reset arduinos and run Serial_Detect.py first to set the values in this file. This file puts the port names of various devices into a file
-        with open("serial_ports.txt") as f:
-            rc_port, imu_port=f.readline().split(" ")
+        with open("/home/jetson/Desktop/Sandbox/SnowPlow/serial_ports.txt") as f:
+            rc_port, imu_port, gps_port=f.readline().split(" ")
         self.motor_ser = serial.Serial(rc_port, baudrate=115200) 
         self.imu_ser = serial.Serial(imu_port,baudrate=115200)
         print("Ports have been set")

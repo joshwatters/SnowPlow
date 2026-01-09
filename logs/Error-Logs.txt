@@ -12,3 +12,31 @@ Traceback (most recent call last):
   File "/home/jetson/Desktop/Sandbox/SnowPlow/src/GPS_Node.py", line 107, in get_lat_lon
     self.lat_factor = 111132.92 - 559.82*math.cos(2*math.radians(coords.lat)) + 1.175*math.cos(4*math.radians(coords.lat)) - 0.0023*math.cos(6*math.radians(coords.lat))
 AttributeError: 'NoneType' object has no attribute 'lat'
+
+
+
+
+FINAL ENTRY
+orts have been set
+Traceback (most recent call last):
+  File "/home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py", line 113, in <module>
+    main()
+  File "/home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py", line 109, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 773, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 770, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 254, in __call__
+    self._handler.send(None)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 463, in handler
+    await call_coroutine(entity, arg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 371, in _execute_timer
+    await await_or_execute(tmr.callback)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
+    return callback(*args)
+  File "/home/jetson/Desktop/Sandbox/SnowPlow/src/Arduino_Node.py", line 79, in timer_callback
+    self.imu_magnetometer = [float(c) for c in datas[1].split(",")]
+IndexError: list index out of range
