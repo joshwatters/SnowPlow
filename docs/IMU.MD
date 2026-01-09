@@ -8,12 +8,14 @@ Currently we use the roll pitch and yaw values from the gyro read over serial.
 ```
 // confirm usb port
 lsusb
-```
 
-```
 // Set baud and scan
 stty -F /dev/ttyUSB0 115200
 cat /dev/ttyUSB0
+
+# Detect which sensor maps to each dev ie ACM0, ACM1 and use the logic pathing and main.py
+source /opt/ros/humble/setup.bash
+python3 /home/jetson/Desktop/Sandbox/SnowPlow/src/Sensor_Detect.py 
 ```
 
 After completing procede to: [Operating Procedure](./operating.MD)
