@@ -37,6 +37,12 @@ Wifi is currently set to: Network: iBrick (2), Password: password. This can be c
 
 The RPI must be connected to a mobile hotspot on someones phone in order to be able to retrieve the correction data. Additionally one script needs to be run from the desktop. One is for Iowa and one is for Minnesota (competition location). Both scripts access publicly available gps data. Just connect to wifi and run the script. The bluetooth method has been tested but requires an app instead of a wifi hotspot.
 
+For Registering Credentials:
+
+[Minnesota](https://mncors.dot.state.mn.us/RegisterAccount.aspx)
+
+Ames,IA script does not require credentials.
+
 ## The GPS used for this project is:
 
 - [Product Specs](https://www.sparkfun.com/sparkfun-gps-rtk-sma-kit.html)
