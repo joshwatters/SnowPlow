@@ -15,15 +15,12 @@ Example using RTK:
 
 After running the script on the raspberry pi with Ames correction data I am able to achieve connection to the correction data and pipe via usb to the zed-f9p. My current understanding, which could change, is that the desired output is: 
 
-
 stop generating NMEA messages: GxGGA, GxGLL
-
 
 instead generate: UBX-NAV-PVT. 
 
 
-I believe this helps with validating the Real Time Kinematics and validating the accuracy however I could use help deciphering the landscape of NMEA messages. I am unclear on the accuracy of this paragraph and far from an expert with 
-GPS. We tested this on 2 separate setups and both recieved a 3d lock. The first one is 3D/DGNSS and the second one is 3D/DGNSS/Float. It appears there are several other outcomes that can happen as well and would like to pinpoint the most desirable to reflect the mm precision detailed in the manual. A forum indicated that Float can indicate a noisy signal. The non-Float gps seemed to experience packet loss while running on the rpi. I currently have the version that has 3D/DGNSS and the lights on the zed are zed f9p red=solid, green=solid, blue=solid, orange=flashing. I am unclear on the desirable outcome.
+By right clicking the individual message types, I am able to disable messages and enable message types on the menu under View > Messages View. I believe this helps with validating the Real Time Kinematics and validating the accuracy however I could use help deciphering the landscape of NMEA messages. I am far from an expert with GPS. We tested this on 2 separate setups and both recieved a 3D lock. The first one is 3D/DGNSS and the second one is 3D/DGNSS/Float. It appears there are several other outcomes that can happen as well and would like to pinpoint the most desirable to reflect the mm precision detailed in the manual. A forum indicated that Float can indicate a noisy signal. The non-Float gps seemed to experience packet loss while running on the rpi. I currently have the version that has 3D/DGNSS and the lights on the zed f9p are: red=solid, green=solid, blue=solid, orange=flashing. I am unclear on the desirable outcome.
 
 <img src="./rpi.jpg" width="720" height="486" />
 <img src="./Ublox.png" width="720" height="400" />
