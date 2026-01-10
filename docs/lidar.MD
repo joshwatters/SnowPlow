@@ -78,11 +78,11 @@ source /opt/ros/humble/setup.bash
 ros2 run rviz2 rviz2
 ```
 
-<img src="./LidarImage.png" width="720" height="486" />
+<img src="./LidarImage.png" width="525" height="450" />
 
-<img src="./RVIZ.png" width="720" height="486" />
+<img src="./RVIZ.png" width="525" height="450" />
 
-<img src="./RVIZ2.png" width="720" height="486" />
+<img src="./RVIZ2.png" width="525" height="450" />
 
 For LMS5xx-family:
 
