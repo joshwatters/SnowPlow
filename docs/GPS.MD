@@ -19,8 +19,9 @@ Stop generating: NMEA messages: GxGGA, GxGLL
 
 Start generating: UBX-NAV-PVT. 
 
-
 By right clicking the individual message types, I am able to disable messages and enable message types on the menu under View > Messages View. I believe this helps with validating the Real Time Kinematics and validating the accuracy however I could use help deciphering the landscape of NMEA messages. I am far from an expert with GPS. We tested this on 2 separate setups and both recieved a 3D lock only after the correction data script was started. The first one is showing in U-center: 3D/DGNSS and the second one is 3D/DGNSS/Float. It appears there are several other outcomes that can happen as well and would like to pinpoint the most desirable to reflect the mm precision detailed in the manual. The data sheet is located below with the other documentation. A forum indicated that float can indicate a noisy signal, I am unsure if this is accurate. I currently have the version that has "3D/DGNSS" and the lights on the zed f9p are: red=solid, green=solid, blue=solid, orange=flashing. The script is running and appears to be sending packets to the usb/uart connection ok with only a brief interuption occasionally and then resumes. I am unclear on the desirable outcome. My goal is to confirm reciept of packets by the zed f9p and produce the most accurate real time kinematic output on the usb leaving the zed via serial.
+
+- [RTK_Debug_Log](../src/RTKDEBUGLOG.txt)
 
 <img src="./rpi.jpg" width="720" height="486" />
 <img src="./Ublox.png" width="720" height="400" />
