@@ -9,11 +9,11 @@ The lidar used for this project is:
 
 ##### Cartesian:
 
-<img src="./Lidar1.PNG" width="525" height="450" />
+<img src="./Lidar1.PNG" width="720" height="486" />
 
 ##### Polar Coordinates:
 
-<img src="./Lidar2.PNG" width="525" height="450" />
+<img src="./Lidar2.PNG" width="720" height="486" />
 
 
 Before the lidar will function, IP configuration must be complete or the Lidar will not be able to recieve packets. The current implementation 
@@ -78,11 +78,11 @@ source /opt/ros/humble/setup.bash
 ros2 run rviz2 rviz2
 ```
 
-<img src="./LidarImage.png" width="525" height="450" />
+<img src="./LidarImage.png" width="720" height="486" />
 
-<img src="./RVIZ.png" width="525" height="450" />
+<img src="./RVIZ.png" width="720" height="486" />
 
-<img src="./RVIZ2.png" width="525" height="450" />
+<img src="./RVIZ2.png" width="720" height="486" />
 
 For LMS5xx-family:
 
