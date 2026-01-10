@@ -50,7 +50,7 @@ The RPI must be connected to a mobile hotspot on someones phone in order to be a
 
 - [Datasheet](./ZED-F9P-02B_DataSheet_UBX-21023276.pdf)
 
-- [Datasheet](./NMEA_Format_v0.1.pdf)
+- [NMEA Sentence Structures](./NMEA_Format_v0.1.pdf)
 
 
 ## Our implementation and scripts that reference the GPS:
